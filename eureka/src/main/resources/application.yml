@@ -2,7 +2,7 @@ server:
   port: 10001
 eureka:
   instance:
-    hostname: ${spring.cloud.client.ipAddress}
+    hostname: ${spring.cloud.client.ip-address}
     prefer-ip-address: true
   client:
     registerWithEureka: false
@@ -12,15 +12,13 @@ eureka:
   server:
     enableSelfPreservation: false
     evictionIntervalTimerInMs: 15000
-security:
-  basic:
-    enabled: true
-  user:
-    name: user
-    password: password
-logging:
-  level:
-    com.netflix: ERROR
 spring:
   application:
     name: eureka
+  security:
+    user:
+      name: user
+      password: password
+logging:
+  level:
+    com.netflix: ERROR

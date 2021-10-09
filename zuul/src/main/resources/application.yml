@@ -5,8 +5,8 @@ spring:
     name: zuul
 eureka:
   instance:
-    hostname: ${spring.cloud.client.ipAddress}
-    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+    hostname: ${spring.cloud.client.ip-address}
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
     prefer-ip-address: true
   client:
     serviceUrl:
@@ -32,7 +32,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 240000
 logging:
   level:
     com.netflix: ERROR
