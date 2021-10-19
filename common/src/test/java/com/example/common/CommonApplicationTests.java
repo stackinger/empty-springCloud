@@ -1,13 +1,15 @@
-package com.example.zuul;
+/*
+package com.example.common;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ZuulApplicationTests {
+class CommonApplicationTests {
 
     @Test
     void contextLoads() {
     }
 
 }
+*/

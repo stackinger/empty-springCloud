@@ -33,6 +33,10 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 240000
+sc:
+  filter:
+    allowPaths:
+      - /login
 logging:
   level:
     com.netflix: ERROR
